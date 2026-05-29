@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="{% static 'files_app/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Upload File</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">
+            Upload
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/">
+        Back Home
+    </a>
+
+</div>
+
+</body>
+</html>
