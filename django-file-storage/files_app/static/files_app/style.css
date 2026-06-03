@@ -99,3 +99,28 @@ footer {
     color: gray;
     padding-bottom: 20px;
 }
+
+.file-actions{
+    margin-top:10px;
+}
+
+.file-actions a{
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:6px;
+    margin-right:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.btn-view{
+    background:#3498db;
+}
+
+.btn-download{
+    background:#27ae60;
+}
+
+.btn-delete{
+    background:#e74c3c;
+}

@@ -40,20 +40,19 @@
 
             <div class="button-group">
 
-                <a href="{{ file.file.url }}" target="_blank">
-                 View ({{ file.file.url }})
-                 </a>
+                <div class="file-actions">
+    <a href="{{ file.file.url }}" target="_blank" class="btn-view">
+        View
+    </a>
 
-                <a class="download-btn"
-                   href="{{ file.file.url }}"
-                   download>
-                    Download
-                </a>
+    <a href="{{ file.file.url }}" download class="btn-download">
+        Download
+    </a>
 
-                <a class="delete-btn"
-                   href="/delete/{{ file.id }}/">
-                    Delete
-                </a>
+    <a href="{% url 'delete_file' file.id %}" class="btn-delete">
+        Delete
+    </a>
+</div>
 
             </div>
 
