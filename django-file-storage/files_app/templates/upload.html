@@ -2,17 +2,24 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Upload File</title>
 
-    <!-- CSS File -->
     <link rel="stylesheet" href="{% static 'files_app/style.css' %}">
+
 </head>
+
 <body>
 
 <div class="container">
 
-    <h1>Upload File</h1>
+    <h1>📤 Upload File</h1>
+
+    <p class="subtitle">
+        Select a file and upload it to your storage.
+    </p>
 
     <form method="POST" enctype="multipart/form-data">
 
@@ -20,16 +27,16 @@
 
         {{ form.as_p }}
 
-        <button type="submit">
-            Upload
+        <button type="submit" class="upload-btn">
+            Upload File
         </button>
 
     </form>
 
     <br>
 
-    <a href="/">
-        Back Home
+    <a class="view-btn" href="/">
+        ← Back Home
     </a>
 
 </div>

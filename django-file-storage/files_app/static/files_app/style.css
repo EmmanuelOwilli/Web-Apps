@@ -1,126 +1,145 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: #f4f7fb;
     margin: 0;
     padding: 0;
 }
 
+/* Main Container */
 .container {
-    width: 70%;
+    width: 80%;
+    max-width: 900px;
     margin: 40px auto;
-    background: white;
+    background: #fff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
 }
 
+/* Headings */
 h1 {
+    margin-bottom: 10px;
     color: #222;
-    margin-bottom: 5px;
 }
 
 .subtitle {
-    color: gray;
-    margin-bottom: 20px;
+    color: #666;
+    margin-bottom: 25px;
 }
 
+/* Upload Button */
 .upload-btn {
     display: inline-block;
-    background-color: #2563eb;
+    background: #2563eb;
     color: white;
-    padding: 10px 18px;
-    border-radius: 6px;
+    padding: 12px 20px;
     text-decoration: none;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 .upload-btn:hover {
-    background-color: #1d4ed8;
+    background: #1d4ed8;
 }
 
+/* File Cards */
 .file-box {
-    background: #f9f9f9;
-    padding: 20px;
+    background: #fafafa;
+    border: 1px solid #ddd;
     border-radius: 10px;
+    padding: 20px;
     margin-top: 20px;
-    transition: 0.3s;
 }
 
-.file-box:hover {
-    transform: scale(1.01);
+.file-box h3 {
+    margin-top: 0;
+    color: #222;
 }
 
-.button-group {
+.file-box p {
+    color: #555;
+}
+
+/* Action Buttons */
+.file-actions {
     margin-top: 15px;
 }
 
-.button-group a {
+.file-actions a {
+    display: inline-block;
     text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 5px;
-    margin-right: 10px;
     color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.view-btn {
-    background-color: #16a34a;
+.btn-view {
+    background: #3498db;
 }
 
-.download-btn {
-    background-color: #2563eb;
+.btn-view:hover {
+    background: #2980b9;
 }
 
-.delete-btn {
-    background-color: #dc2626;
+.btn-download {
+    background: #27ae60;
 }
 
-.view-btn:hover {
-    background-color: #15803d;
+.btn-download:hover {
+    background: #1e8449;
 }
 
-.download-btn:hover {
-    background-color: #1d4ed8;
+.btn-delete {
+    background: #e74c3c;
 }
 
-.delete-btn:hover {
-    background-color: #b91c1c;
+.btn-delete:hover {
+    background: #c0392b;
 }
 
+/* Empty State */
 .empty-box {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     background: #fafafa;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
+/* Forms */
+form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
 footer {
     text-align: center;
     margin-top: 30px;
-    color: gray;
-    padding-bottom: 20px;
-}
-
-.file-actions{
-    margin-top:10px;
-}
-
-.file-actions a{
-    text-decoration:none;
-    padding:8px 14px;
-    border-radius:6px;
-    margin-right:10px;
-    color:white;
-    font-weight:bold;
-}
-
-.btn-view{
-    background:#3498db;
-}
-
-.btn-download{
-    background:#27ae60;
-}
-
-.btn-delete{
-    background:#e74c3c;
+    color: #666;
+    padding: 20px;
 }

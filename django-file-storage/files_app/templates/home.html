@@ -2,13 +2,9 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <title>File Storage App</title>
-
     <link rel="stylesheet" href="{% static 'files_app/style.css' %}">
-
 </head>
 
 <body>
@@ -38,11 +34,19 @@
                 {{ file.file.name }}
             </p>
 
+            {% if file.file %}
+                <img src="{{ file.file.url }}"
+                     alt="{{ file.title }}"
+                     class="preview-image">
+            {% endif %}
+
             <div class="button-group">
 
-                <a href="{{ file.file.url }}" target="_blank">
-                 View ({{ file.file.url }})
-                 </a>
+                <a class="view-btn"
+                   href="{{ file.file.url }}"
+                   target="_blank">
+                    View
+                </a>
 
                 <a class="download-btn"
                    href="{{ file.file.url }}"
@@ -76,14 +80,10 @@
 </div>
 
 <footer>
-
     <p>
         Django File Storage Project • CSE 310
     </p>
-
 </footer>
 
 </body>
 </html>
-
-<p>{{ file.file.url }}</p>
