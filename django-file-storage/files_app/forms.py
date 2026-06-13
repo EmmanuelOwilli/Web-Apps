@@ -7,3 +7,4 @@ class UploadFileForm(forms.ModelForm):
     class Meta:
         model = UploadedFile
         fields = ['title', 'file']
+    
